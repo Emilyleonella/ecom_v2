@@ -1,0 +1,18 @@
+.carousel-root{
+  height: 400px;
+}
+.carousel{
+  height: 50vh;
+  width: 1;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.thumbs{
+ display: none;
+}
+
+.slider-img{
+  width: 300px;
+}
+

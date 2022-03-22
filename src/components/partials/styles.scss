@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0px;
   padding: 0px;
   font-family: "Pacifico", cursive;
@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #f7f7c2;
+  background-color: rgb(247, 247, 194);
   padding: 5px;
   margin: auto;
 }
@@ -17,8 +17,7 @@ nav {
 .link {
   position: relative;
   text-decoration: none;
-  font-family: "Pacifico", cursive;
-  /* google font*/
+  font-family: "Pacifico", cursive; /* google font*/
   color: gray;
   font-size: 25px;
   letter-spacing: 0.5px;
@@ -27,7 +26,7 @@ nav {
 .link:after {
   content: "";
   position: absolute;
-  background-color: #c1c1f3;
+  background-color: rgb(193, 193, 243);
   height: 3px;
   width: 0;
   left: 0;
@@ -51,7 +50,6 @@ nav {
   height: 34px;
   transition: 0.5s ease;
 }
-
 .link:hover .cart {
   opacity: 0.3;
 }
@@ -59,33 +57,33 @@ nav {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 15px;
   padding: 20 px;
 }
 
 .quote {
   padding: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 37px;
   font-family: "Righteous", cursive;
   color: rgba(63, 65, 65, 0.918);
-  text-shadow: -2px 1px 0 #e99595;
-  
+  text-shadow: -2px 1px 0 rgb(233, 149, 149);
+  background-color: rgb(224, 242, 250);
 }
 
 .para {
   background: url(/public/images/sunflowers.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 370px;
+  height: 470px;
 }
 
 .aboutus {
   margin: 100px;
-  font-family: Bradley Hand, cursive;
-  font-size: 20px;
-  text-align: center;
+  font-family: cursive;
+  font-size: 30px;
 }
+
 
 .social {
   margin-bottom: -20px;
@@ -141,7 +139,7 @@ footer {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #f7f7c2;
+  background-color: rgb(247, 247, 194);
 }
 
 .description {
@@ -157,7 +155,6 @@ footer {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 /* this is the product images */
 .nbook {
   height: 150px;
@@ -174,7 +171,7 @@ footer {
 }
 
 button {
-  background-color: #f19494;
+  background-color: rgb(241, 148, 148);
   padding: 5px;
   border-radius: 10px;
 }
@@ -209,52 +206,57 @@ button {
 .up {
   padding: 20px;
 }
-
 .arrowup {
   height: 70px;
   display: flex;
   justify-content: center;
 }
-
 .headup {
   text-align: center;
   font-family: "Pacifico", cursive;
 }
 
+.slide-container{
+  height: 60px;
+}
+
+.carousel.slider-wrapper{
+  width: 50%;
+}
+
 .para1 {
-  background: url(/public/images/para1.jpeg) no-repeat center;
+  background: url(public/images/para1.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 150px;
 }
 .para2 {
-  background: url(/public/images/para2.jpeg) no-repeat center;
+  background: url(public/images/para2.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 150px;
 }
 .para3 {
-  background: url(/public/images/para7.jpeg) no-repeat center;
+  background: url(public/images/para7.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 430px;
 }
 .para4 {
-  background: url(/public/images/parasun.jpeg) no-repeat center;
+  background: url(public/images/parasun.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 430px;
 }
 .para5 {
-  background: url(/public/images/paragv.jpeg) no-repeat center;
+  background: url(public/images/paragv.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 150px;
 }
 .para6 {
-  background: url(/public/images/para6.jpeg) no-repeat center;
+  background: url(public/images/para6.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 250px;
 }
-/*# sourceMappingURL=app.css.map */
