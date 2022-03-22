@@ -257,4 +257,96 @@ button {
   background-attachment: fixed;
   height: 250px;
 }
+
+.contact {
+  text-align: center;
+  background-color: rgb(193, 193, 243);
+  width: 500px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+form {
+  margin: 30px;
+  font-size: 20px;
+  text-align: left;
+  
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 40px 10px;
+  padding-top: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formbutton {
+  margin-bottom: 30px;
+}
+.formbutton:hover {
+  background-color: rgb(145, 236, 209);
+}
+button:hover {
+  background-color: rgb(236, 235, 162);
+}
+
+/*Tablet View*/
+@media only screen and (max-width: 768px) {
+  .fig {
+    height: 200px;
+    width: 210px;
+  }
+  .fig2 {
+    height: 200px;
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .fig {
+    height: 300px;
+    width: 310px;
+  }
+  .fig2 {
+    height: 300px;
+    width: 310px;
+  }
+}
+
+/* Mobile View*/
+@media only screen and (max-width: 375px) {
+  .fig {
+    height: 130px;
+    width: 140px;
+    padding: 7px;
+  }
+  .fig2 {
+    height: 200px;
+    width: 210px;
+  }
+  .nbook {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  button {
+    background-color: rgb(241, 148, 148);
+    padding: 3px;
+    border-radius: 7px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

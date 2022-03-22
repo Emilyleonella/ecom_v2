@@ -12,8 +12,7 @@ const Nav = () => {
       <img alt="bee_logo" class="bee" src="/images/bee__logo-removebg-preview (1).png" />
       <a class="link" href="/">Home</a>
       <a class="link" href="/Notebooks">Notebooks</a>
-      {/* <a class="link" href="stationary.html">Stationary</a> */}
-      <a class="link" href="contact.html">Contact</a>
+      <a class="link" href="/Contact">Contact</a>
       <a class="link" href="#"><img alt="shoping_cart" class="cart" src="/images/cart.png" /></a>
     </nav>
 
