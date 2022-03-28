@@ -1,11 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Index";
-import Notebook from "./pages/Notebook";
 import Footer from "./components/Footer";
 import Contactpage from "./pages/Contactpage";
+import Notebooks from "./pages/Notebooks"
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Homepage/>}></Route>
-          <Route path="/Notebooks" element={<Notebook/>}></Route>
+          <Route path="/Notebooks" element={<Notebooks/>}></Route>
           <Route path="/Contact" element={<Contactpage/>}></Route>
       </Routes>
       </div>
