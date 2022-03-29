@@ -18,20 +18,22 @@ db.connect(err => {
     console.log('connected')
   }
 })
+app.use(cors());
+app.use(express.json())
+
+app.get('/products',(req,res)=>{
+  db.query(`SELECT * FROM products`, (err, result)=>{
+    if(err){
+      console.log(err);
+    }else{
+      res.send(result);
+    }
+  });
+});
+
 
 app.listen(3001, () =>{
   console.log("running on port 3001")
 })
 
 
-module.exports={ 
-  displayImage:function(callback){
-   
-   var sql='SELECT * FROM products';
-   db.query(sql,function (err, data, fields) {
-   if(err) throw err
-   return callback(data);
-  })
-  }
-
-}

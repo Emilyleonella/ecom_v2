@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Products = () => {
-  foreach() 
+const Products = (Props) => {
+  
 
   return (
     <div>
