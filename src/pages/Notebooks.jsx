@@ -10,9 +10,7 @@ const products = () => {
       <p className='quote'>With organization comes empowerment</p>
       <div className='para3'></div>
     </section>
-    <Products 
-    
-    />
+    <Products/>
     {/* <figure className="example">
       <img alt="notebook_example" className="fig" src="images/ex4.jpeg" />
       <img alt="notebook_example" className="fig" src="images/ex_3.jpg " />

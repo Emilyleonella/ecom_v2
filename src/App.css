@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.desc {
+  transform: translate(180px, -650px);
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;

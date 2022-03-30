@@ -31,6 +31,15 @@ app.get('/products',(req,res)=>{
   });
 });
 
+app.get('/products/descriptions',(req,res)=>{
+  db.query(`SELECT description FROM products `, (err, result)=>{
+    if(err){
+      console.log(err);
+    }else{
+      res.send(result);
+    }
+  });
+});
 
 app.listen(3001, () =>{
   console.log("running on port 3001")
