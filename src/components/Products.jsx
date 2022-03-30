@@ -8,7 +8,7 @@ class Products extends React.Component {
     this.state = { products:[], loading: false }; // dont load the data yet 
   
   }
-  componentDidMount (){
+  componentWillMount (){
     fetch("http://localhost:3001/products")
     .then((response)=>{
       // this.setState({
@@ -35,8 +35,8 @@ class Products extends React.Component {
 }
 
 render(){
-  
-  const inventory = this.state.products?.map((e, i )=>{
+  return(
+    this.state.products.map(e => (  
     <ProductTem
     key={e.id}
     name= {e.name}
@@ -45,14 +45,14 @@ render(){
     image = {e.images}
     />
 
-  })
+   ))
   
-  return( <> {inventory} </>
+  
   )
-  }
+}
 }
 
-
+  export default Products;
 // return create another companet (template for your prodcuts)
 // use map to go through my products
 // return another
@@ -82,4 +82,4 @@ render(){
 //   )
 // }
 
-export default Products;
+
