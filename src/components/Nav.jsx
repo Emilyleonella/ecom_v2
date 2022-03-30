@@ -9,11 +9,11 @@ const Nav = () => {
     {/* Navigation Bar*/}
 
     <nav>
-      <img alt="bee_logo" class="bee" src="/images/bee__logo-removebg-preview (1).png" />
-      <a class="link" href="/">Home</a>
-      <a class="link" href="/Notebooks">Notebooks</a>
-      <a class="link" href="/Contact">Contact</a>
-      <a class="link" href="#"><img alt="shoping_cart" class="cart" src="/images/cart.png" /></a>
+      <img alt="bee_logo" className='bee' src="/images/bee__logo-removebg-preview (1).png" />
+      <a className="link" href="/">Home</a>
+      <a className="link" href="/Notebooks">Notebooks</a>
+      <a className="link" href="/Contact">Contact</a>
+      <a className="link" href="#"><img alt="shoping_cart" className="cart" src="/images/cart.png" /></a>
     </nav>
 
   </header>
@@ -38,14 +38,14 @@ export default Nav
 
 
 
-// export default class Nav extends React.Component{
+// export default  Nav extends React.Component{
 //     render(){
 
 //     return(
 
-//     <div class="container">
-//           <div class="navbar">
-//               <div class="logo">
+//     <div ="container">
+//           <div ="navbar">
+//               <div ="logo">
                  
 //               </div>
 //               <nav>

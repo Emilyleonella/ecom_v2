@@ -11,7 +11,7 @@ const Footer = () => {
         target="_blank"
         aria-label="instagram"
         rel="noopener"
-        ><i class="fab fa-instagram"></i
+        ><i className="fab fa-instagram"></i
       ></a>
       <a
         className='logo'
@@ -19,7 +19,7 @@ const Footer = () => {
         target="_blank"
         aria-label="Snapchat"
         rel="noopener"
-        ><i class="fab fa-snapchat"></i
+        ><i className="fab fa-snapchat"></i
       ></a>
       <a
         className='logo'
@@ -27,7 +27,7 @@ const Footer = () => {
         target="_blank"
         aria-label="twitter"
         rel="noopener"
-        ><i class="fab fa-twitter"></i
+        ><i className="fab fa-twitter"></i
       ></a>
       <a
         className='logo'
@@ -35,7 +35,7 @@ const Footer = () => {
         target="_blank"
         aria-label="facebook"
         rel="noopener"
-        ><i class="fab fa-facebook"></i
+        ><i className="fab fa-facebook"></i
       ></a>
     </div>
     <img
