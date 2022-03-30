@@ -35,34 +35,19 @@ class Products extends React.Component {
 }
 
 render(){
-  return(
-    <>
-    <figure className="example">
-    
   
-   {
-     this.state.loading && // until the loading is not true dont load the data
-     this.state.products?.map((e, i) => 
-     <img alt="notebook_example" key={e.id} className="nbook" src= {e.images}  />
-     )
-     // .map is a method to iterate through the products 
-     // e holds the interation value 
-     // e.description 
-     // 
-    }
-     {
-     this.state.loading && // until the loading is not true dont load the data
-     this.state.products?.map((e, i) => 
-     <p className='desc' key={e.id}>{e.description}</p>
-     )
-     // .map is a method to iterate through the products 
-     // e holds the interation value 
-     // e.description 
-     // 
-    }
-    
-  </figure>
-  </>
+  const inventory = this.state.products?.map((e, i )=>{
+    <ProductTem
+    key={e.id}
+    name= {e.name}
+    description= {e.description}
+    price = {e.price}
+    image = {e.images}
+    />
+
+  })
+  
+  return( <> {inventory} </>
   )
   }
 }
