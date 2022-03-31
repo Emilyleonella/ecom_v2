@@ -8,7 +8,7 @@ class Products extends React.Component {
     this.state = { products:[], loading: false }; // dont load the data yet 
   
   }
-  componentDidMount (){
+  componentWillMount (){
     fetch("http://localhost:3001/products")
     .then((response)=>{
       // this.setState({
@@ -36,57 +36,20 @@ class Products extends React.Component {
 
 render(){
   return(
-    <>
-    <figure className="example">
-    
+    this.state.products.map(e => (  
+    <ProductTem
+    key={e.id}
+    name= {e.name}
+    description= {e.description}
+    price = {e.price}
+    image = {e.images}
+    />
+
+   ))
   
-   {
-     this.state.loading && // until the loading is not true dont load the data
-     this.state.products?.map(e => 
-      <>
-      <p>{e.name}</p>
-     <img alt="notebook_example" key={e.id} className="nbook" src= {e.images}  />
-     </>)
-     // .map is a method to iterate through the products 
-     // e holds the interation value 
   
-    }
-     
-    
-  </figure>
-  </>
   )
 }
 }
 
-
-// return create another companet (template for your prodcuts)
-// use map to go through my products
-// return another
-//
-
-// const Products = () => {
-
-//   return (
-//     <div>
-//     {/* <main className='maincon'>
-//       <section className='item'>
-//         <div className='contain1'>
-//           <img alt="notebook" className='nbook' src="images/notebook_r.jpeg"/>
-//           <div className='overlay'>
-//             <h1>2022-2023 Planner</h1>
-//             <p className='description'>Full Year Calender With Flower Cover.</p>
-//           </div>
-//         </div>
-
-//         <p className='price'>
-//           $9.00
-//           <button>Add to cart</button>
-//         </p>
-//       </section>
-//     </main> */}
-//     </div>
-//   )
-// }
-
-export default Products;
+  export default Products;

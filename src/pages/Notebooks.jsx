@@ -11,11 +11,11 @@ const products = () => {
       <div className='para3'></div>
     </section>
     <Products/>
-    {/* <figure className="example">
+    <figure className="example">
       <img alt="notebook_example" className="fig" src="images/ex4.jpeg" />
       <img alt="notebook_example" className="fig" src="images/ex_3.jpg " />
       <img alt="notebook_example" className="fig" src="images/ex.jpeg" />
-    </figure> */}
+    </figure>
     <aside className="up">
       <a className="arrowup" href="#"
         ><img alt="arrow_up" src="images/arrow2.png"
