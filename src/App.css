@@ -65,25 +65,36 @@ nav {
 }
 
 .quote {
-  padding: 40px;
+  padding-top: 20px;
   text-align: center;
   font-size: 30px;
   font-family: "Righteous", cursive;
   color: rgba(63, 65, 65, 0.918);
   text-shadow: -2px 1px 0 #e99595;
 }
+
+.by{
+  padding: 10px;
+  text-align: center;
+  font-size: 27px;
+  font-family: "Righteous", cursive;
+  color: rgba(63, 65, 65, 0.918);
+  text-shadow: -2px 1px 0 #e99595;
+}
 /* paralax image on homepage */
 .para {
-  background: url(/public/images/sunflowers.jpeg) no-repeat center;
+  background: url(/public/images/para2.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 370px;
+  height: 350px;
+  
 }
 
 .aboutus {
-  margin: 100px;
-  font-family: Bradley Hand, cursive;
+  margin: 40px;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -98,14 +109,10 @@ nav {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-footer {
-  background-color: rgba(194, 247, 197, 0.596);
-  padding: 0px;
-  font-family: "Pacifico", cursive;
-  font-size: 20px;
-  text-align: center;
+.logo:hover{
+  color:black;
 }
+
 /* bee logo on footer */
 .bee2 {
   height: 50px;
@@ -117,7 +124,7 @@ footer {
 /* Products css starts here  */
 .maincon {
   display: inline-flex;
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 .contain1 {
@@ -143,13 +150,14 @@ footer {
 }
 
 .productName {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Righteous", cursive;
 }
 
 .description {
   color: black;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:600;
   position: absolute;
   top: 40%;
   left: 40%;
@@ -200,21 +208,11 @@ footer {
 }
 
 .fig {
-  height: 400px;
-  width: 440px;
+  height: 300px;
+  width: 360px;
   padding: 30px;
 }
 
-.example2 {
-  display: flex;
-  justify-content: center;
-}
-
-.fig2 {
-  height: 400px;
-  width: 470px;
-  padding: 30px;
-}
 
 .up {
   padding: 20px;
@@ -231,18 +229,7 @@ footer {
   font-family: "Pacifico", cursive;
 }
 
-.para1 {
-  background: url(/public/images/para1.jpeg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 150px;
-}
-.para2 {
-  background: url(/public/images/para2.jpeg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 150px;
-}
+
 .para3 {
   background: url(/public/images/para7.jpeg) no-repeat center;
   background-size: cover;
@@ -255,12 +242,7 @@ footer {
   background-attachment: fixed;
   height: 430px;
 }
-.para5 {
-  background: url(/public/images/paragv.jpeg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 150px;
-}
+
 .para6 {
   background: url(/public/images/para6.jpeg) no-repeat center;
   background-size: cover;
@@ -293,7 +275,8 @@ input {
   text-align: center;
   padding: 12px 20px;
   margin: 8px 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   display: flex;
   margin-left: 25%;
   width: 50%;
@@ -305,7 +288,9 @@ textarea {
   padding-top: 5px;
   margin: 8px 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
 }
 
 .formbutton {
@@ -313,45 +298,49 @@ textarea {
 }
 .formbutton:hover {
   background-color: rgb(145, 236, 209);
+  box-shadow: 0 0 10px 0 rgb(238, 167, 233) inset,
+    0 0 10px 4px rgb(194, 169, 238);
 }
 button:hover {
   background-color: rgb(168, 231, 247);
 }
-
+footer {
+  background-color: rgba(194, 247, 197, 0.596);
+  padding: 0px;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  text-align: center;
+}
 /*Tablet View*/
 @media only screen and (max-width: 768px) {
   .fig {
     height: 200px;
     width: 210px;
   }
-  .fig2 {
-    height: 200px;
-    width: 210px;
+  .maincon {
+    display: inline-flex;
+    margin-left: 30px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .fig {
-    height: 300px;
-    width: 310px;
+    height: 210px;
+    width: 220px;
   }
-  .fig2 {
-    height: 300px;
-    width: 310px;
+  .para4{
+    height: 100px;
   }
 }
 
 /* Mobile View*/
 @media only screen and (max-width: 375px) {
   .fig {
-    height: 130px;
+    height: 13px;
     width: 140px;
     padding: 7px;
   }
-  .fig2 {
-    height: 200px;
-    width: 210px;
-  }
+ 
   .nbook {
     height: 150px;
     width: 150px;
@@ -359,11 +348,55 @@ button:hover {
     margin: 10px;
   }
 
+
   button {
     background-color: rgb(241, 148, 148);
     padding: 3px;
     border-radius: 7px;
   }
+
+  form.contact{
+    text-align: center;
+  background-color: rgba(193, 193, 243, 0.356);
+  width: 300px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  }
 }
+
+@media only screen and (max-width: 414px) {
+  .fig {
+    height: 13px;
+    width: 140px;
+    padding: 7px;
+  }
+ 
+  .nbook {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+
+  button {
+    background-color: rgb(241, 148, 148);
+    padding: 3px;
+    border-radius: 7px;
+  }
+
+  form.contact{
+    text-align: center;
+  background-color: rgba(193, 193, 243, 0.356);
+  width: 300px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  }
+}
+
 
 /*# sourceMappingURL=app.css.map */

@@ -28,7 +28,7 @@ const Form = () => {
           Message:
           <textarea
             name="message"
-            placeholder="Send us a comment, or question. Thanks! For questions on your order email us at beeunique@abc.com"
+            placeholder="Send us a comment, or question. Thanks! (For questions on your order email us at beeunique@abc.com)"
           ></textarea>
         </div>
         <button className="formbutton" type="submit" value="Submit">
