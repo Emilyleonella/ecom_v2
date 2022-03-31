@@ -1,9 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.13.2"
-  },
   "description": "ecom project version 2",
   "main": "server.js",
   "scripts": {
@@ -16,6 +13,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "mysql": "^2.18.1",
+    "node": "^17.7.2",
     "nodemon": "^2.0.15"
   }
 }
