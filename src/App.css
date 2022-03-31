@@ -71,7 +71,6 @@ nav {
   font-family: "Righteous", cursive;
   color: rgba(63, 65, 65, 0.918);
   text-shadow: -2px 1px 0 #e99595;
-  
 }
 /* paralax image on homepage */
 .para {
@@ -119,7 +118,6 @@ footer {
 .maincon {
   display: inline-flex;
   margin-left: 20px;
-   
 }
 
 .contain1 {
@@ -144,9 +142,8 @@ footer {
   background-color: #f7f7c2;
 }
 
-.productName{
+.productName {
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 .description {
@@ -178,23 +175,17 @@ footer {
   text-align: center;
 }
 /* add to cart button css */
- .btn{
-   margin-left:7px ;
-    border-color: #9d9df8;
-    color: rgb(65, 61, 61);
-    box-shadow: 0 0 40px 40px #f19494 inset, 0 0 0 0 #8787c9;
-    transition: all 150ms ease-in-out
- }
- .btn:hover{
-    box-shadow: 0 0 10px 0 rgb(243, 201, 240) inset, 0 0 10px 4px rgb(209, 190, 243);
-    cursor: pointer;
- }
-
-/* button on contact page */
-button {
-  background-color: #f19494;
-  padding: 3px;
-  border-radius: 10px;
+.btn {
+  margin-left: 7px;
+  border-color: #9d9df8;
+  color: rgb(65, 61, 61);
+  box-shadow: 0 0 40px 40px #f19494 inset, 0 0 0 0 #8787c9;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0 0 10px 0 rgb(243, 201, 240) inset,
+    0 0 10px 4px rgb(209, 190, 243);
+  cursor: pointer;
 }
 
 .categ {
@@ -279,30 +270,37 @@ button {
 
 .contact {
   text-align: center;
-  background-color: rgb(193, 193, 243);
+  background-color: rgba(193, 193, 243, 0.356);
   width: 500px;
   margin: 30px;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
 }
+/* button on contact page */
+button {
+  background-color: #f19494;
+  padding: 3px;
+  border-radius: 10px;
+}
 
 form {
   margin: 30px;
   font-size: 20px;
   text-align: left;
-  
 }
 input {
-  width: 100%;
+  text-align: center;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  margin-left: 25%;
+  width: 50%;
 }
 
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 40px 10px;
   padding-top: 5px;
   margin: 8px 0;
