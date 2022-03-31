@@ -5,11 +5,11 @@ const app = express()
 const mysql = require('mysql')
 const cors = require('cors');
 const path = require('path');
-const port = process.env.PORT || 3000
+// const port = process.env.PORT || 3000
 
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
-app.listen(port, () => console.log(`App is live on port ${port}!`));
+// app.listen(port, () => console.log(`App is live on port ${port}!`));
 
 const db = mysql.createConnection({
   host: 'localhost',
