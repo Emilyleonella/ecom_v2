@@ -2,6 +2,9 @@
   "name": "ecom_project",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -9,7 +12,7 @@
     "axios": "^0.26.1",
     "cors": "^2.8.5",
     "heroku": "^7.60.0",
-    "node": "^17.7.2",
+    "node": "^16.13.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive-carousel": "^3.2.23",
