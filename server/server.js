@@ -4,6 +4,7 @@ const { addListener } = require('nodemon')
 const app = express()
 const mysql = require('mysql')
 const cors = require('cors');
+const { type } = require('os');
 // const path = require('path');
 // const port = process.env.PORT || 3000
 
@@ -47,6 +48,18 @@ app.get('/products/descriptions',(req,res)=>{
     }
   });
 });
+
+app.get('/products/type/:type',(req,res)=>{
+   console.log(req.params.type) // req has an object called params 
+  db.query(`SELECT * FROM products WHERE type = ${req.params.type}; `, (err, result)=>{
+    if(err){
+      console.log(err);
+    }else{
+      res.send(result);
+    }
+  });
+});
+
 
 app.listen(3001, () =>{
   console.log("running on port 3001")
