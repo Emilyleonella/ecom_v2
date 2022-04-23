@@ -14,7 +14,7 @@ const { type } = require('os');
 
 //mysql://be1a0f798982d8:d8d52a08@us-cdbr-east-05.cleardb.net/heroku_8042a9edba81ab0?reconnect=true
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'be1a0f798982d8',
   password: 'd8d52a08',
