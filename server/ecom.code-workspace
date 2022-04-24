@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "ecom_project_V2",
+			"path": ".."
+		},
+		{
+			"name": "ecomDB",
+			"path": "../../ecomDB"
+		}
+	],
+	"settings": {}
+}
