@@ -23,7 +23,7 @@ const db = mysql.createPool({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'be1a0f798982d8',
   password: 'd8d52a08',
-  database: 'heroku_8042a9edba81ab0?'
+  database: 'heroku_8042a9edba81ab0'
 })
 
 // db.connect(err => {
@@ -39,7 +39,7 @@ app.use(cors());
 app.use(express.json())
 
 app.get('/products',(req,res)=>{
-  db.query(`SELECT * FROM products`, (err, result)=>{
+  db.query(`SELECT * FROM inventory`, (err, result)=>{
     if(err){
       console.log(err);
     }else{
@@ -49,7 +49,7 @@ app.get('/products',(req,res)=>{
 });
 
 app.get('/products/descriptions',(req,res)=>{
-  db.query(`SELECT description FROM products `, (err, result)=>{
+  db.query(`SELECT description FROM inventory `, (err, result)=>{
     if(err){
       console.log(err);
     }else{
@@ -60,7 +60,7 @@ app.get('/products/descriptions',(req,res)=>{
 
 app.get('/products/type/:type',(req,res)=>{
    console.log(req.params.type) // req has an object called params 
-  db.query(`SELECT * FROM products WHERE type = ${req.params.type}; `, (err, result)=>{
+  db.query(`SELECT * FROM inventory WHERE type = ${req.params.type}; `, (err, result)=>{
     if(err){
       console.log(err);
     }else{

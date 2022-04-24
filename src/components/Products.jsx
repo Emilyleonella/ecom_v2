@@ -28,7 +28,7 @@ class Products extends React.Component {
     )
     .then((data)=>{
         // holds the state 
-        this.setState({products:data, loading: true}); // just setting the state , now load the data
+        this.setState({inventory:data, loading: true}); // just setting the state , now load the data
         console.log(this.state)
     },
     
@@ -37,7 +37,7 @@ class Products extends React.Component {
 
 render(){
   return(
-    this.state.products.map(e => (  
+    this.state.inventory.map(e => (  
     <ProductTem
     key={e.id}
     name= {e.name}
