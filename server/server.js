@@ -13,21 +13,28 @@ const { type } = require('os');
 // app.listen(port, () => console.log(`App is live on port ${port}!`));
 
 //mysql://be1a0f798982d8:d8d52a08@us-cdbr-east-05.cleardb.net/heroku_8042a9edba81ab0?reconnect=true
-
+// const db = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'Leonella123$',
+//   database: 'Ecom_V2'
+// })
 const db = mysql.createPool({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'be1a0f798982d8',
   password: 'd8d52a08',
-  database: 'heroku_8042a9edba81ab0'
+  database: 'heroku_8042a9edba81ab0?'
 })
 
-db.connect(err => {
-  if (err) {
-      return err;
-  }else{
-    console.log('connected')
-  }
-})
+// db.connect(err => {
+//   if (err) {
+//       return err;
+//   }else{
+//     console.log('connected')
+//   }
+// })
+
+
 app.use(cors());
 app.use(express.json())
 

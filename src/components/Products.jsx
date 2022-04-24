@@ -10,7 +10,7 @@ class Products extends React.Component {
   
   }
   componentWillMount (){
-    fetch("http://localhost:3001/products")
+    fetch("https://dbecom.herokuapp.com/products")
     .then((response)=>{
       // this.setState({
       //   products: response.status
