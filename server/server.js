@@ -1,10 +1,7 @@
-// import React from 'react';
 const express = require('express')
-const { addListener } = require('nodemon')
 const app = express()
 const mysql = require('mysql')
 const cors = require('cors');
-const { type } = require('os');
 // const path = require('path');
 // const port = process.env.PORT || 3000
 

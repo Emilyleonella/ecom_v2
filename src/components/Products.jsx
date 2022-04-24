@@ -6,7 +6,7 @@ import ProductTem from "./ProductTem";
 class Products extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { products:[], loading: false }; // dont load the data yet 
+    this.state = { inventory:[], loading: false }; // dont load the data yet 
   
   }
   componentWillMount (){
